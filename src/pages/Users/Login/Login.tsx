@@ -42,6 +42,9 @@ export const Login = () => {
 					</Grid>
 					<Grid item>
 						<MUICheckbox />
+						<Typography sx={{ color: 'gray', display: 'inline' }}>
+							Recuérdame
+						</Typography>
 					</Grid>
 					<Grid item>
 						<Button size="large" variant="contained" sx={{ width: '100%' }}>
