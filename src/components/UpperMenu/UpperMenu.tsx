@@ -15,7 +15,7 @@ export const UpperMenu = () => {
 			>
 				<Toolbar>
 					<Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-						MANTENEDOR DE CLIENTES -
+						COMPAÑIA DE CLIENTES -
 					</Typography>
 
 					<IconButton
