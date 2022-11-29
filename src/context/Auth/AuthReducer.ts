@@ -1,9 +1,9 @@
-import { LoginUser, User } from '../../interfaces/Users'
+import { User, Client } from '../../interfaces/Users'
 import { authState } from './AuthState'
 
 type AuthActionTypes =
 	| { type: 'LOGIN_USER'; payload: User }
-	| { type: 'GET_USERS'; payload: User[] }
+	| { type: 'GET_USERS'; payload: Client[] }
 
 export const AuthReducer = (
 	state: authState,

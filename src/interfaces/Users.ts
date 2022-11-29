@@ -1,4 +1,4 @@
-export interface User {
+export interface Client {
 	name: string
 	email: string
 	password: string
@@ -10,13 +10,17 @@ export interface User {
 	interests?: string
 	genre: Gender
 	_id?: string
+	image:string
 }
 
-export interface LoginUser {
-	name: string
+export interface User {
+	username: string
+	email:string
 	password: string
 }
 
 export type Gender = 'M' | 'F'
 
 export type Status = 'AUTHENTICATED' | 'VERIFYING' | 'NO AUTHORIZED'
+
+//const numStr:(number | string )[]    = [2,3,"o",3]

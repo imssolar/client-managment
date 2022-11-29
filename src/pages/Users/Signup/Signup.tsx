@@ -7,7 +7,7 @@ import {
 	TextField,
 	Typography,
 } from '@mui/material'
-import { LoginUser } from '../../../interfaces/Users'
+import { User } from '../../../interfaces/Users'
 
 type formValues = {
 	name: string

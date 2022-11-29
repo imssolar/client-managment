@@ -1,0 +1,7 @@
+{
+	"routes": [
+		{ "routeName": "Inicio", "path": "home" },
+		{ "routeName": "Consulta Clientes", "path": "create" },
+		{ "routeName": "Consulta Categorías", "path": "category" }
+	]
+}

@@ -1,11 +1,9 @@
 import React from 'react'
-import { UpperMenu } from '../../components/UpperMenu'
-import { AsideDrawer } from '../../components/Aside/AsideDrawer'
+import { Layout } from '../../components/Layout'
 export const Home = () => {
 	return (
 		<div>
-			<UpperMenu />
-			<AsideDrawer />
+			<Layout />
 		</div>
 	)
 }

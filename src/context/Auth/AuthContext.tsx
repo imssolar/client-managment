@@ -1,10 +1,10 @@
 import { createContext } from 'react'
-import { LoginUser, User } from '../../interfaces/Users'
+import { User } from '../../interfaces/Users'
 
 interface contextProps {
 	user: User | null
 	token: string | null
-	loginUser: (userToLogin: LoginUser) => void
+	loginUser: (userToLogin: User) => void
 	registerUser: (userToRegister: User) => void
 }
 

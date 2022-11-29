@@ -14,8 +14,10 @@ import {
 	ListItemButton,
 	ListItemText,
 } from '@mui/material'
+import routeJson from '../../data/routes.json'
 
 import { FaUserCircle } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 export const AsideDrawer = () => {
 	const drawerWidth = '25%'
 
@@ -86,18 +88,21 @@ export const AsideDrawer = () => {
 				</Typography>
 				<Divider />
 				<List sx={{ padding: '5px', marginLeft: '35px' }}>
-					{['INICIO', 'Consulta Clientes', 'Consulta Categorías'].map(
-						(text) => (
-							<ListItem key={text} disablePadding>
-								<Typography sx={{ color: 'dodgerblue', fontWeight: 'bold' }}>
-									{returnFirstLetter(text)}
-								</Typography>
-								<ListItemButton>
-									<ListItemText primary={text} />
-								</ListItemButton>
-							</ListItem>
-						)
-					)}
+					{routeJson.routes.map((route, index) => (
+						<ListItem key={index} disablePadding>
+							<Typography sx={{ color: 'dodgerblue', fontWeight: 'bold' }}>
+								{returnFirstLetter(route.routeName)}
+							</Typography>
+							<ListItemButton>
+								<Link
+									style={{ textDecoration: 'none', color: 'black' }}
+									to={`/${route.path}`}
+								>
+									<ListItemText primary={route.routeName} />
+								</Link>
+							</ListItemButton>
+						</ListItem>
+					))}
 				</List>
 			</Drawer>
 			{/* <Box

@@ -1,5 +1,5 @@
 import React, { useReducer } from 'react'
-import { LoginUser, User } from '../../interfaces/Users'
+import { User } from '../../interfaces/Users'
 import { AuthContext } from './AuthContext'
 import { AuthReducer } from './AuthReducer'
 import api from '../../api/api'
@@ -24,7 +24,7 @@ const INITIAL_STATE: authState = {
 export const AuthState = ({ children }: stateProps) => {
 	const [state, dispatch] = useReducer(AuthReducer, INITIAL_STATE)
 
-	const loginUser = async (userToLogin: LoginUser) => {
+	const loginUser = async (userToLogin: User) => {
 		console.log('test')
 	}
 
